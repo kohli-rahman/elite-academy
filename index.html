@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Institute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        header img {
+            position: absolute;
+            left:80px;
+            top: 40px;
+            height: 160px;
+        }
+        .marquee {
+            background: #FF5733;
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+        .marquee div {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        .hero {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FFA500;
+            padding: 15px;
+            font-size: 1.2em;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .testimonials {
+            background: #ded5d5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            
+        }
+        .testimonial-slider {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            animation: slide 8s infinite linear;
+            
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .testimonial-item {
+            min-width: 100%;
+            text-align: center;
+            
+        }
+        .testimonial-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            
+        }
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #1E3A8A;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1E3A8A;
+            color: white;
+            font-size: 1.1em;
+            margin-top: 30px;
+        }
+
+        .faculty, .batches {
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .faculty {
+            background: #e3f2fd;
+        }
+        .batches {
+            background: #fbe9e7;
+        }
+        .faculty ul, .batches ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .faculty li, .batches li {
+            background: #ffffff;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1E3A8A;
+            color: white;
+            font-size: 1.2em;
+            margin-top: 30px;
+        }
+        .home-section {
+            background: #e3f2fd;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .home-section h2 {
+            color: #1E3A8A;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .home-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #444;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Institute Logo">
+        <h1>Welcome to Elite Academy</h1>
+        <h5>P. P Road Buxar Near ICICI, Buxar, Bihar, Bihar 802101 | Mob. No.:9110112530</h5>
+    </header>
+    <div class="marquee">
+        <div>🔥 Admissions Open! Enroll Now for the Best Learning Experience! 🚀</div>
+    </div>
+   
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container home-section" id="home">
+        <h2>Home</h2>
+        <p>Welcome to the best coaching institute of Buxar where we shape your future. We have the best 
+        best faculties known for their excellence among the students in the city. They have 
+        taught thousands of students over the year who have produced best results in boards and competitive
+        exams like JEE in the city.</p>
+    </div>
+    <div class="container faculty" id="faculty">
+        <h2>👨‍🏫 Meet Our Expert Faculty</h2>
+        <p>Our faculty members are dedicated professionals with years of experience, ensuring top-notch guidance for our students.</p>
+        <ul>
+            <li>📘 <strong>Mathematics</strong> - Sanjay Sir</li>
+            <li>🔬 <strong>Physics</strong> - Rahul Sir</li>
+            <li>🧪 <strong>Chemistry</strong> - Abhishek Sir</li>
+            <li>🧬 <strong>Biology</strong> - Anjali Ma'am</li>
+            <li>📖 <strong>English</strong> - Ramesh Sir</li>
+        </ul>
+    </div>
+    
+        
+             <div class="container batches" id="batches">
+                <h2>📅 Our Structured Batches</h2>
+                <p>We offer well-structured batches to cater to the diverse needs of students from different classes.</p>
+                <h3>📝 Class 9 And Class 10</h3>
+                <ul>
+                    <li>🌅 Mathematics By Sanjay Sir</li>
+                    <li>☀️ Chemistry By Abhishek Sir</li>
+                    <li>🌙 Physics By Rahul Sir </li>
+                    <li>📆 Biology By XX Madam </li>
+                </ul>
+               
+                <h3>📝 Class 11 & Class 12 (PCMB)</h3>
+                <ul>
+                    <li>🌅 Mathematics By Sanjay Sir</li>
+                    <li>☀️ Chemistry By Abhishek Sir</li>
+                    <li>🌙 Physics By Rahul Sir </li>
+                    <li>📆 Biology By XX Madam </li>
+                </ul>
+                <h3>📝 Class 11 & Class 12 (PCM)</h3>
+                <ul>
+                    <li>🌅 Mathematics By Sanjay Sir</li>
+                    <li>☀️ Chemistry By Abhishek Sir</li>
+                    <li>🌙 Physics By Rahul Sir </li>
+                    
+                </ul>
+                <h3>📝 Class 11 & Class 12 (PCB)</h3>
+                <ul>
+                    <li>☀️ Chemistry By Abhishek Sir</li>
+                    <li>🌙 Physics By Rahul Sir </li>
+                    <li>📆 Biology By XX Madam </li>
+                </ul>
+            </div>
+    
+    <div class="container testimonials">
+        <h2>Student Testimonials</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <img src="student1.jpg" alt="Student A">
+                <p>"This institute helped me achieve my goals! Highly recommended." - Student A</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="student2.jpg" alt="Student B">
+                <p>"Great faculty and study material, the best coaching in town!" - Student B</p>
+            </div>
+        </div>
+    </div>
+    <div class="container home-section" id="about">
+        <h2>About Us</h2>
+        <p>We provide quality education with experienced faculty and excellent study material. Study material has been specifically 
+          prepared to tackle the challenges of different board examinations like CBSE,ICSE, State Boards along with a completely different
+            section for competition to prepare students for tougher and unique problems.</p>
+    </div>
+
+    <div class="container home-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: eliteacademy@gmail.com</p>
+        <p>Phone: +91 9110112530</p>
+        
+    </div>
+    <div class="social-icons">
+        <a href="https://chat.whatsapp.com/KrtF4AdzCew6FJwF2qhYWE"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+        <a href="https://www.instagram.com/elite_academy_buxar?igsh=MTBpcGFscjV6cnV2eg=="><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+        <a href="https://www.linkedin.com/in/elite-academy-buxar/"><i class="fa fa-linkedin" area hidden="true"></i> LinkedIn</a>
+    </div>
+   
+    
+    <footer>
+        <p>&copy; 2025 Elite Academy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
